@@ -1,0 +1,7 @@
+<div style="border: 1px; border-color: black;border-style: dotted;">
+  Content will be initialized only when toggled (check initiDate & console!)
+  <button (click)="display = !display">Toggle content</button>
+  <ng-container *ngIf="display">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </ng-container>
+</div>
